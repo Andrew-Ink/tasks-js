@@ -1,0 +1,33 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.tasks {
+  height: auto;
+  width: 500px;
+  background-color: palegoldenrod;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.tasks__title {
+  font-size: 26px;
+  
+}
+
+.tasks__list {
+  list-style: none;
+  font-size: 18px;
+
+}
+
+.task__link {
+  text-decoration: none;
+  color: inherit;
+}
+.task__link:visited {
+  color:inherit
+}

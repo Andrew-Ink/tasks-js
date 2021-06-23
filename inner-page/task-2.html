@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Tasck-2</title>
+</head>
+
+<body>
+<script>
+
+
+
+const workers = [
+		{"name":"John","salary":500},
+		{"name":"Mike","salary":1300},
+		{"name":"Linda","salary":1500},
+		{"name":"Jony","salary":700},
+		{"name":"Chris","salary":1200}];
+
+
+const filter = (arrWorkers) => {
+
+
+  let arrName = [];
+
+
+  for (let i = 0; i < arrWorkers.length; i++) {
+
+    let worker = arrWorkers[i];
+
+    if (worker.salary > 1000) {
+
+      arrName.push(worker.name)
+    }
+  }
+  return (arrName)
+};
+
+
+console.log(filter(workers));
+
+alert(filter(workers));
+
+
+
+
+
+</script>
+</body>
+</html>

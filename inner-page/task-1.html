@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Task-1</title>
+</head>
+
+<body>
+<script>
+
+
+const string = "Привет! Как дела?";
+const arrvowels = ['а', 'е', 'и', 'о', 'у', 'ы', 'э', 'ю', 'я'];
+
+
+
+const filter = (str) => {
+
+
+  let result = "";
+
+  const lowstr = str.toLowerCase();
+
+  for (let i = 0; i < lowstr.length; i++) {
+
+    let symbol = lowstr[i];
+
+    if (arrvowels.includes(symbol)) {
+
+      result += symbol;
+    }
+  }
+  return (result)
+};
+
+
+console.log(filter(string));
+
+alert(filter(string));
+
+
+
+
+
+</script>
+</body>
+</html>
