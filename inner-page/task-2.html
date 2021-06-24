@@ -9,45 +9,45 @@
 </head>
 
 <body>
-<script>
+  <script>
 
 
 
-const workers = [
-		{"name":"John","salary":500},
-		{"name":"Mike","salary":1300},
-		{"name":"Linda","salary":1500},
-		{"name":"Jony","salary":700},
-		{"name":"Chris","salary":1200}];
+    const workers = [
+      { "name": "John", "salary": 500 },
+      { "name": "Mike", "salary": 1300 },
+      { "name": "Linda", "salary": 1500 }, { "name": "Jony", "salary": 700 },
+      { "name": "Chris", "salary": 1200 }];
 
 
-const filter = (arrWorkers) => {
+    const filter = (arrWorkers) => {
 
 
-  let arrName = [];
+      let arrName = [];
 
 
-  for (let i = 0; i < arrWorkers.length; i++) {
+      for (let i = 0; i < arrWorkers.length; i++) {
 
-    let worker = arrWorkers[i];
+        let worker = arrWorkers[i];
 
-    if (worker.salary > 1000) {
+        if (worker.salary > 1000) {
 
-      arrName.push(worker.name)
-    }
-  }
-  return (arrName)
-};
-
-
-console.log(filter(workers));
-
-alert(filter(workers));
+          arrName.push(worker.name)
+        }
+      }
+      return arrName
+    };
 
 
+    console.log(filter(workers));
+
+    alert(filter(workers));
 
 
 
-</script>
+
+
+  </script>
 </body>
+
 </html>
